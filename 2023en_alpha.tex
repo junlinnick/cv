@@ -1,0 +1,298 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape JunLin Zeng} \\ \vspace{1pt}
+    Shanghai, China \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +86-18280063317 ~ \href{mailto:junlinnick@163.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{junlinnick@163.com}} ~ 
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of Electronic Science and Technology of China (UESTC)}{Sep. 2015 -- Jun. 2018}
+      {Master's in Electronic Communication and Engineering}{Chengdu, Sichuan}
+    \resumeSubheading
+      {University of Electronic Science and Technology of China (UESTC)}{Sep. 2010 -- Jun. 2014}
+      {Bachelor's in Information Management and Information Systems}{Chengdu, Sichuan}
+
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+%-----------WORK EXPERIENCE-----------
+
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Ping An Financial Technology Consulting Co., Ltd.}{Sep. 2020 -- Present}
+      {Senior Algorithm Engineer}{Pudong District, Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Algorithm Platform Development}
+          {Responsible for the construction and enhancement of the company's core algorithm platform.}
+        \resumeItem{End-to-end Model Implementation}
+          {Oversaw the full process from business requirement communication to modeling implementation, ensuring seamless integration of algorithms into business operations.}
+        \resumeItem{Product Research}
+          {Actively participated in internal product research, providing expert insights and guidance for product enhancements.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Shanghai Youzu Information Technology Co., Ltd.}{Jul. 2018 -- Sep. 2020}
+      { Senior Data Mining Engineer.}{Xuhui District, Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{User Profiling}
+          {Engaged in user profiling tasks, delivering effective data mining products to multiple project teams.}
+        \resumeItem{Publication Achievements}
+          {Multiple findings were published in renowned conferences, including IEEE.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Project Experience}
+
+
+% First Project
+\noindent {\textbf{1. \textit{Crius} Algorithm Platform} $|$ \emph{Ping An Tech} $|$ \emph{Primary Developer}} \hfill \textit{Oct 2020 - Present}
+
+Participated in the construction of Ping An Tech's one-stop big data analysis modeling platform, CRIUS, offering features such as visual modeling and interactive modeling tailored to various use cases. This allows users to process a wide range of data scales, and accomplish corresponding data analysis, machine learning, and deep learning tasks.
+
+\textbf{Responsibilities}:
+\begin{itemize}
+    \item Played a key role in designing and implementing the overall architecture of the product, including the frontend user interface and backend data processing modules.
+    \item Contributed to multiple versions of the platform, including a private version ensuring data privacy and security by deploying on client servers, and a distributed version integrating with Spark and HiveServer2, significantly enhancing data processing and analysis efficiency.
+    \item Supported user projects, including feature processing, to optimize target models.
+\end{itemize}
+
+\textbf{Achievements}:
+\begin{itemize}
+    \item Developed a platform tailored for various specific business scenarios, ensuring product satisfaction across different client types. Oversaw product maintenance and updates, resolved user issues and enhanced user experience.
+    \item The platform was extensively adopted within internal project groups and  external companies.
+\end{itemize}
+
+\vspace{1em}
+
+% Second Project
+\noindent {\textbf{2. Used Car Purchase Intention Prediction} $|$ \emph{Ping An Tech}$|$ \emph{Lead Researcher}} \hfill \textit{May 2023 - Jul 2023}
+\begin{itemize}
+    \item Collaborated with an automotive portal site to further filter the moderate and low-intent users identified by their existing model, aiming to improve conversion rates.
+    \item Employed methods like GBDT and XGboost, leveraging a variety of features for model computation to obtain high-intent results, which were validated by the business side and subsequently targeted in promotional campaigns.
+\end{itemize}
+
+\textbf{Responsibilities}:
+\begin{itemize}
+    \item \textit{Feasibility Assessment}: Established project viability, chose appropriate data timeframes, and determined result delivery methods.
+    \item \textit{Feature Engineering}: Cleaned and standardized user data, selecting top-performing relevant features for modeling.
+    \item \textit{Model Training and Result Selection}: Chose suitable algorithms and features for training, then selected a precise audience segment for outreach based on the model's output.
+\end{itemize}
+
+\textbf{Achievements}:
+\begin{itemize}
+    \item Achieved a model accuracy rate close to 80%.
+    \item Contributed to an increase in the website's daily conversions by 300-400 users.
+\end{itemize}
+
+\noindent {\textbf{3. In-Game Player Churn Analysis} $|$ \emph{Yoozoo Games} $|$ \emph{Project Lead, Lead Researcher}} \hfill \textit{Sep 2018 - Sep 2020}
+\begin{itemize}
+    \item Utilized methods such as GBDT and XGboost to analyze and predict player churn behaviors within the game. The analyses were based on general player data like in-game login behaviors and payment behaviors. The predictions and annotations were used by the business team for timely user outreach and intervention.
+\end{itemize}
+
+\textbf{Responsibilities}:
+\begin{itemize}
+    \item System Modeling: Established project viability, selected data timeframes, and determined how to present the results.
+    \item Feature Engineering: Cleaned and standardized player data, selected the most relevant and high-performing features.
+    \item Model Training and Optimization: Used appropriate algorithms for computation. Achieved a model accuracy rate of 95% and an AUC of 0.92, demonstrating strong portability. After the model was deployed, took charge of Code Review and optimization of related functions to improve data processing efficiency, enhance features, and elevate the model's performance.
+\end{itemize}
+
+\textbf{Achievements}:
+\begin{itemize}
+    \item Achieved a model accuracy rate of 95% and an AUC of 0.92.
+    \item Conducted research on player login stability and churn behaviors using cross-entropy. The related findings were accepted by conferences such as IEEE CoG.
+\end{itemize}
+
+\noindent {\textbf{4. User Portrait: Player's Payment Labeling} $|$ \emph{Yoozoo Games} $|$ \emph{Lead Researcher}} \hfill \textit{Aug 2018 - Jun 2019}
+\begin{itemize}
+    \item Used the Kmeans algorithm with dynamic parameter adjustments to classify players based on their payment behaviors within a certain cycle. Ensured timeliness and differentiated players' payment capabilities within an adequate time frame.
+\end{itemize}
+
+\textbf{Responsibilities}:
+\begin{itemize}
+    \item Feature Engineering: Selected the most relevant and high-performing features, appropriate computation cycles; and was responsible for hyperparameter tuning.
+    \item Model Training and Optimization: Optimized the model's data retrieval logic; improved the method of hyperparameter dynamic adjustment during training, which accelerated model convergence.
+\end{itemize}
+
+\textbf{Achievements}:
+\begin{itemize}
+    \item The model was implemented in over 10 Yoozoo-launched projects (e.g., Game of Thrones - PC,  etc.). Its applications included classifying and monitoring players based on various resources and dimensions, as well as targeted deployments.
+\end{itemize}
+
+\noindent {\textbf{5. Analysis of In-Game Social Ecosystem} $|$ \emph{Yoozoo Games} $|$ \emph{Lead Researcher}} \hfill \textit{Jan 2019 - Jun 2019}
+\begin{itemize}
+    \item Applied Social Network Analysis (SNA) algorithms like Louvain using in-game social data, such as alliance interactions, friend behaviors, mail exchanges, and attack actions to analyze the in-game social ecosystem.
+\end{itemize}
+
+\textbf{Responsibilities}:
+\begin{itemize}
+    \item Feature Engineering: Cleaned and standardized various player data features.
+    \item Model Analysis: Used parameters from the social network graph, such as closeness centrality and betweenness centrality, to discover KOL (Key Opinion Leader) players; evaluated the health level of game servers based on alliances as the fundamental units.
+\end{itemize}
+
+\textbf{Achievements}:
+\begin{itemize}
+    \item The model was primarily used for "Game of Thrones - PC". It assisted operational colleagues in identifying KOL players and monitoring the health of the game ecosystem.
+\end{itemize}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL} \\
+     \textbf{Machine Learning Algorithms}{: LR, GBDT, XGBOOST, Kmeans, Transformer, etc.} \\
+     \textbf{Container Technology}{: Docker} \\
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+
+
+%-----------INVOLVEMENT---------------
+
+
+\section{Personal Strengths}
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt]
+    \item Proficient in identifying and addressing issues.
+    \item Meticulous with a strong attention to detail.
+    \item Highly responsible and accountable.
+    \item Effective in communication.
+\end{itemize}
+
+
+\end{document}
